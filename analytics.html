@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Manager - Analytics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Finance Manager</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="income.html">Income</a></li>
+            <li><a href="expenses.html">Expenses</a></li>
+            <li><a href="budgets.html">Budgets</a></li>
+            <li><a href="savings.html">Savings</a></li>
+            <li><a href="debts.html">Debts</a></li>
+            <li><a href="investments.html">Investments</a></li>
+            <li><a href="analytics.html" class="active">Analytics</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Analytics</h1>
+        <div class="charts">
+            <div class="chart-container">
+                <h3>Expense Breakdown</h3>
+                <canvas id="expense-pie-chart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Monthly Income</h3>
+                <canvas id="income-chart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Savings Progress</h3>
+                <canvas id="savings-chart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Investment Growth</h3>
+                <canvas id="investment-chart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="js/charts.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Manager - Income</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Finance Manager</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="income.html" class="active">Income</a></li>
+            <li><a href="expenses.html">Expenses</a></li>
+            <li><a href="budgets.html">Budgets</a></li>
+            <li><a href="savings.html">Savings</a></li>
+            <li><a href="debts.html">Debts</a></li>
+            <li><a href="investments.html">Investments</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Income Manager</h1>
+        <form id="income-form">
+            <input type="text" id="source" placeholder="Source" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <input type="date" id="date" required>
+            <input type="text" id="category" placeholder="Category">
+            <button type="submit">Add Income</button>
+        </form>
+        <table id="income-table">
+            <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="js/income.js"></script>
+</body>
+</html>

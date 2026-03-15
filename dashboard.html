@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Manager - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Finance Manager</h2>
+        <ul>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="income.html">Income</a></li>
+            <li><a href="expenses.html">Expenses</a></li>
+            <li><a href="budgets.html">Budgets</a></li>
+            <li><a href="savings.html">Savings</a></li>
+            <li><a href="debts.html">Debts</a></li>
+            <li><a href="investments.html">Investments</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Dashboard</h1>
+        <div class="cards">
+            <div class="card">
+                <h3>Total Income</h3>
+                <p id="total-income">KES 0</p>
+            </div>
+            <div class="card">
+                <h3>Total Expenses</h3>
+                <p id="total-expenses">KES 0</p>
+            </div>
+            <div class="card">
+                <h3>Savings</h3>
+                <p id="total-savings">KES 0</p>
+            </div>
+            <div class="card">
+                <h3>Investments</h3>
+                <p id="total-investments">KES 0</p>
+            </div>
+            <div class="card">
+                <h3>Net Balance</h3>
+                <p id="net-balance">KES 0</p>
+            </div>
+        </div>
+        <div class="charts">
+            <div class="chart-container">
+                <canvas id="expense-chart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="monthly-chart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

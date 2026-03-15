@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Manager - Debts</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Finance Manager</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="income.html">Income</a></li>
+            <li><a href="expenses.html">Expenses</a></li>
+            <li><a href="budgets.html">Budgets</a></li>
+            <li><a href="savings.html">Savings</a></li>
+            <li><a href="debts.html" class="active">Debts</a></li>
+            <li><a href="investments.html">Investments</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Debt Manager</h1>
+        <form id="debt-form">
+            <input type="text" id="creditor" placeholder="Creditor" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <button type="submit">Add Debt</button>
+        </form>
+        <table id="debt-table">
+            <thead>
+                <tr>
+                    <th>Creditor</th>
+                    <th>Amount</th>
+                    <th>Paid</th>
+                    <th>Balance</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="js/debts.js"></script>
+</body>
+</html>
